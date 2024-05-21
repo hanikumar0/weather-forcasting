@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <main>
+        <section id="location-search" class="search-section">
+            <input type="text" id="location-input" placeholder="Enter city">
+            <button onclick="searchWeather()">Search</button>
+        </section>
+        <section id="current-weather" class="weather-section">
+            <h2>Current Weather</h2>
+            <div class="weather-details">
+                <p>Humidity: <span id="humidity">...</span>%</p>
+                <p>Temperature: <span id="temperature">...</span>°C</p>
+                <p>Weather Description: <span id="weather-description">...</span></p>
+                <p>Wind Speed: <span id="wind-speed">...</span> km/h</p>
+
+            </div>
+        </section>
+        <section id="forecast" class="forecast-section">
+            <h2>Next 5 Days Forecast</h2>
+            <ul id="forecast-list">
+                >
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
